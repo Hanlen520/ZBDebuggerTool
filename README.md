@@ -5,6 +5,14 @@
 [![License](https://img.shields.io/cocoapods/l/ZBDebuggerTool.svg?style=flat)](https://cocoapods.org/pods/ZBDebuggerTool)
 [![Platform](https://img.shields.io/cocoapods/p/ZBDebuggerTool.svg?style=flat)](https://cocoapods.org/pods/ZBDebuggerTool)
 
+## 安装指南
+
+使用CocoaPods安装
+
+```ruby
+pod 'ZBDebuggerTool'
+```
+
 ## Example
 
  1、导入文件
@@ -31,18 +39,11 @@
 
 ![image](https://github.com/lzbgithubcode/ZBDebuggerTool/raw/master/screenshotImage/result.gif)
 
-## Installation
 
-ZBDebuggerTool is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
 
-```ruby
-pod 'ZBDebuggerTool'
-```
+## 作者
 
-## Author
-
-ZB, 18559822970
+lzb, 1835064412@qq.com
 
 ## License
 
