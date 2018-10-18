@@ -1,0 +1,6 @@
+framework module Pods_ZBDebuggerTool_Example {
+  umbrella header "Pods-ZBDebuggerTool_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

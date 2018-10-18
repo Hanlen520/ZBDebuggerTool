@@ -1,0 +1,6 @@
+framework module ZBDebuggerTool {
+  umbrella header "ZBDebuggerTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

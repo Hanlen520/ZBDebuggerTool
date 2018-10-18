@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZBDebuggerTool'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of ZBDebuggerTool.'
+  s.version          = '0.0.1'
+  s.summary          = 'ZBDebuggerTool'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,31 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+ZBDebuggerTool 是检测app性能的第三方工具，包括APP性能检测、crash收集、API拦截、沙盒文件
                        DESC
 
-  s.homepage         = 'https://github.com/ZB/ZBDebuggerTool'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/lzbgithubcode/ZBDebuggerTool'
+  
+  s.screenshots     = 'https://github.com/lzbgithubcode/ZBDebuggerTool/raw/master/screenshotImage/result.gif', 'www.example.com/screenshots_2'
+  
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ZB' => '18559822970' }
-  s.source           = { :git => 'https://github.com/ZB/ZBDebuggerTool.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/lzbgithubcode/ZBDebuggerTool.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'ZBDebuggerTool/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'ZBDebuggerTool' => ['ZBDebuggerTool/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'ZBDebuggerTool' => ['ZBDebuggerTool/Assets/*.png']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  
+  # 第三方库
+   s.dependency 'AFNetworking', '~> 3.2'
+   s.dependency 'FMDB', '~> 2.7.2'
+  
 end

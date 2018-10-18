@@ -7,12 +7,16 @@
 //
 
 #import "ZBAppDelegate.h"
+#import <ZBDebuggerTool/ZBDebuggerTool.h>
 
 @implementation ZBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+   // [ZBDebuggerConfig defaultDebuggerConfig].ballThemeColor = [UIColor redColor];
+   
+    [[ZBDebuggerTool shareDebuggerTool] startWorking];
+    
     return YES;
 }
 

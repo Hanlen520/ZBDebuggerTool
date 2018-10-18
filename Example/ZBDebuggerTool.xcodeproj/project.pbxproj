@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1F257311B26DBD25A886A938 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		2D952118FF1CF5981789DFBA /* ZBDebuggerTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZBDebuggerTool.podspec; path = ../ZBDebuggerTool.podspec; sourceTree = "<group>"; };
+		1F257311B26DBD25A886A938 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2D952118FF1CF5981789DFBA /* ZBDebuggerTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZBDebuggerTool.podspec; path = ../ZBDebuggerTool.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		364F9A55892D03004CD3FC03 /* Pods-ZBDebuggerTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBDebuggerTool_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZBDebuggerTool_Tests/Pods-ZBDebuggerTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3AE8036351A3A7EE3770A687 /* Pods-ZBDebuggerTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBDebuggerTool_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZBDebuggerTool_Example/Pods-ZBDebuggerTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5E8FFA0307E36DA005A4E3F5 /* Pods_ZBDebuggerTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZBDebuggerTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +66,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80A101E1E0596C8C54C6C72F /* Pods-ZBDebuggerTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBDebuggerTool_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZBDebuggerTool_Tests/Pods-ZBDebuggerTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B5F8D12D7C45C86F43639109 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B5F8D12D7C45C86F43639109 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = ZB;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = CY927LV923;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -301,10 +304,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZBDebuggerTool_Example/Pods-ZBDebuggerTool_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/ZBDebuggerTool/ZBDebuggerTool.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZBDebuggerTool.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +492,7 @@
 			baseConfigurationReference = 3AE8036351A3A7EE3770A687 /* Pods-ZBDebuggerTool_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CY927LV923;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZBDebuggerTool/ZBDebuggerTool-Prefix.pch";
 				INFOPLIST_FILE = "ZBDebuggerTool/ZBDebuggerTool-Info.plist";
@@ -500,6 +508,7 @@
 			baseConfigurationReference = 67C1D77D4BF41FAE18308EF1 /* Pods-ZBDebuggerTool_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CY927LV923;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZBDebuggerTool/ZBDebuggerTool-Prefix.pch";
 				INFOPLIST_FILE = "ZBDebuggerTool/ZBDebuggerTool-Info.plist";

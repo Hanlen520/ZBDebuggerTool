@@ -7,9 +7,29 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+ 1、导入文件
+ 
+ 2、Appdelegate 文件开启监听
+ ```objc
+ 
+   /**可以配置监听器的参数*/
+  [ZBDebuggerConfig defaultDebuggerConfig].ballThemeColor = [UIColor redColor];
+  
+  /**开始监听*/
+  [[ZBDebuggerTool shareDebuggerTool] startWorking];
 
-## Requirements
+ ```
+ 
+ 3、如果不使用可以关闭监听
+ ```objc
+ 
+ [[ZBDebuggerTool shareDebuggerTool] stopWorking];
+ 
+ ```
+
+## 效果图
+
+![image](https://github.com/lzbgithubcode/ZBDebuggerTool/raw/master/screenshotImage/result.gif)
 
 ## Installation
 
