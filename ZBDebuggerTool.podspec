@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZBDebuggerTool'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'ZBDebuggerTool'
 
 # This description is used to generate tags and improve search results.
@@ -35,7 +35,7 @@ ZBDebuggerTool 是检测app性能的第三方工具，包括APP性能检测、cr
   s.source_files = 'ZBDebuggerTool/Classes/**/*'
   
    s.resource_bundles = {
-     'ZBDebuggerTool' => ['ZBDebuggerTool/Assets/*.png']
+     'ZBDebuggerTool' => ['ZBDebuggerTool/Assets/*']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
