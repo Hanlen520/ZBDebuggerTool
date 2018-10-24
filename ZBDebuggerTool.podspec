@@ -42,22 +42,9 @@ ZBDebuggerTool 是检测app性能的第三方工具，包括APP性能检测、cr
      'ZBDebuggerTool' => ['ZBDebuggerTool/Assets/*']
    }
 
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  #s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   
-   
-   #子库
-   s.subspec 'Common' do |c|
-       c.source_files = 'ZBDebuggerTool/Classes/Common/**/*'
-   end
-   
-   s.subspec 'Helper' do |h|
-      h.source_files = 'ZBDebuggerTool/Classes/Helper/**/*'
-   end
-   
-   s.subspec 'Modules' do |m|
-      m.source_files = 'ZBDebuggerTool/Classes/Modules/**/*'
-   end
    
    # 第三方库
    s.dependency 'AFNetworking', '~> 3.2'
