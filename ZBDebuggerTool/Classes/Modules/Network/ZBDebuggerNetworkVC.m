@@ -23,8 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
      self.navigationItem.title = @"调用API数据";
-    NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
-    [self.tableView registerNib:[UINib nibWithNibName:@"ZBDebuggerNetworkCell" bundle:currentBundle] forCellReuseIdentifier:ZBDebuggerNetworkCellID];
+    [self.tableView registerClass:[ZBDebuggerNetworkCell class] forCellReuseIdentifier:ZBDebuggerNetworkCellID];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self setupInitNavigationBar];
     [self loadHoldupAPIData];

@@ -21,9 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"App崩溃收集";
-    
-    NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
-    [self.tableView registerNib:[UINib nibWithNibName:@"ZBDebuggerCrashListCell" bundle:currentBundle] forCellReuseIdentifier:ZBDebuggerCrashListCellID];
+  
+    [self.tableView registerClass:[ZBDebuggerCrashListCell class] forCellReuseIdentifier:ZBDebuggerCrashListCellID];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self setupInitNavigationBar];
     [self loadHoldupAPIData];
@@ -93,6 +92,28 @@
         [self.navigationController pushViewController:vc animated:YES];
     }
     
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(indexPath.row < self.dataList.count){
+        ZBDebuggerCrashModel *model = self.dataList[indexPath.row];
+        CGFloat cellHeight =  0;
+        
+        CGFloat resonHeight = ceil([model.reason boundingRectWithSize:CGSizeMake([UIScreen mainScreen].bounds.size.width - 2*kleftRightMargin, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : titleLabel_Font} context:nil].size.height);
+        cellHeight =  cellHeight + resonHeight + ktopBottomMargin;
+        
+        CGFloat titleHeight = ceil([model.name sizeWithAttributes:@{NSFontAttributeName :descLabel_Font }].height);
+        cellHeight  = cellHeight + titleHeight + ktopBottomMargin;
+        
+        CGFloat dateHeight = ceil([model.crashDate sizeWithAttributes:@{NSFontAttributeName :dateLabel_Font }].height);
+        cellHeight  = cellHeight + dateHeight + ktopBottomMargin;
+    
+        cellHeight = cellHeight +ktopBottomMargin;
+        return cellHeight;
+        
+    }else
+        return CGFLOAT_MIN;
 }
 
 - (void)setupInitNavigationBar

@@ -43,4 +43,6 @@
  * App 信息
  */
 @property (strong , nonatomic) NSArray *appInfos;
+
+
 @end

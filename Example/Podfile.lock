@@ -17,7 +17,7 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - ZBDebuggerTool (0.0.4):
+  - ZBDebuggerTool (0.0.5):
     - FMDB (~> 2.7.2)
 
 DEPENDENCIES:
@@ -31,7 +31,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  ZBDebuggerTool: 3a86a2ff00066b6ffff48939c029335329b3c337
+  ZBDebuggerTool: 24c6ffc01cd9ac38fbb7923d8e4d79bcbf325d0d
 
 PODFILE CHECKSUM: 3e53f699213c959fcec107a87e01552aba7432b7
 

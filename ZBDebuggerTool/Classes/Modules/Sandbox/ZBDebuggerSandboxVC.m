@@ -87,6 +87,11 @@
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 50;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if(indexPath.row >= self.sandboxModel.subModels.count) return;
@@ -145,10 +150,9 @@
     }
     
      self.tableView.allowsMultipleSelectionDuringEditing = YES;
+
     
-    NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
-    
-    [self.tableView registerNib:[UINib nibWithNibName:@"ZBDebuggerSandboxCell" bundle:currentBundle] forCellReuseIdentifier:ZBDebuggerSandboxCellID];
+    [self.tableView registerClass:[ZBDebuggerSandboxCell class] forCellReuseIdentifier:ZBDebuggerSandboxCellID];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     [self.tableView reloadData];

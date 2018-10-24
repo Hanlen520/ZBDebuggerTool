@@ -8,12 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
+#define ktopBottomMargin 10
+#define kleftRightMargin 15
+
+#define ZBDebuggerNetworkDetailCell_titleLabel_Font  [UIFont systemFontOfSize:18.0]
+#define ZBDebuggerNetworkDetailCell_descLabel_Font  [UIFont systemFontOfSize:14.0]
+
+
+
 static NSString *ZBDebuggerNetworkDetailCellID = @"ZBDebuggerNetworkDetailCellID";
 
 @interface ZBDebuggerNetworkDetailCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *descLabel;
-@property (weak, nonatomic) IBOutlet UIView *bottomLine;
+
+@property (strong, nonatomic)  UILabel *titleLabel;
+
+@property (strong, nonatomic)  UILabel *descLabel;
+
+@property (strong, nonatomic)  UIView *bottomLine;
 
 
 @end
