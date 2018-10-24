@@ -17,23 +17,11 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - ZBDebuggerTool (0.0.3):
-    - AFNetworking (~> 3.2)
-    - FMDB (~> 2.7.2)
-    - ZBDebuggerTool/Common (= 0.0.3)
-    - ZBDebuggerTool/Helper (= 0.0.3)
-    - ZBDebuggerTool/Modules (= 0.0.3)
-  - ZBDebuggerTool/Common (0.0.3):
-    - AFNetworking (~> 3.2)
-    - FMDB (~> 2.7.2)
-  - ZBDebuggerTool/Helper (0.0.3):
-    - AFNetworking (~> 3.2)
-    - FMDB (~> 2.7.2)
-  - ZBDebuggerTool/Modules (0.0.3):
-    - AFNetworking (~> 3.2)
+  - ZBDebuggerTool (0.0.4):
     - FMDB (~> 2.7.2)
 
 DEPENDENCIES:
+  - AFNetworking (~> 3.2)
   - ZBDebuggerTool (from `../`)
 
 EXTERNAL SOURCES:
@@ -43,8 +31,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  ZBDebuggerTool: 20de6f4624e8b966b878c49cd763cb69e88ffab7
+  ZBDebuggerTool: 3a86a2ff00066b6ffff48939c029335329b3c337
 
-PODFILE CHECKSUM: 71fc35f5e5d0ada6e5401ed97dac8e62558b700a
+PODFILE CHECKSUM: 3e53f699213c959fcec107a87e01552aba7432b7
 
 COCOAPODS: 1.4.0

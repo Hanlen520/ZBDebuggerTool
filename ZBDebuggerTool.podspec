@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZBDebuggerTool'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = 'ZBDebuggerTool'
 
 # This description is used to generate tags and improve search results.
@@ -47,7 +47,6 @@ ZBDebuggerTool 是检测app性能的第三方工具，包括APP性能检测、cr
   
    
    # 第三方库
-   s.dependency 'AFNetworking', '~> 3.2'
    s.dependency 'FMDB', '~> 2.7.2'
   
 end

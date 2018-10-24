@@ -13,7 +13,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-   // [ZBDebuggerConfig defaultDebuggerConfig].ballThemeColor = [UIColor redColor];
    
     [[ZBDebuggerTool shareDebuggerTool] startWorking];
     
