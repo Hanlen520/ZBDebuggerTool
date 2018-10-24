@@ -23,7 +23,7 @@ ZBDebuggerTool 是检测app性能的第三方工具，包括APP性能检测、cr
 
   s.homepage         = 'https://github.com/lzbgithubcode/ZBDebuggerTool'
   
-  s.screenshots     = 'https://github.com/lzbgithubcode/ZBDebuggerTool/raw/master/screenshotImage/result.gif', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://github.com/lzbgithubcode/ZBDebuggerTool/raw/master/screenshotImage/result.gif'
   
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lzb' => '1835064412@qq.com' }
