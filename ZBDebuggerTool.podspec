@@ -35,7 +35,7 @@ ZBDebuggerTool 是检测app性能的第三方工具，包括APP性能检测、cr
   s.source_files = 'ZBDebuggerTool/Classes/**/*'
   
   #其他资源
-  s.resource = 'ZBDebuggerTool/Classes/**/*'
+  #s.resource = 'ZBDebuggerTool/Classes/**/*'
   
   # 图片资源
    s.resource_bundles = {
