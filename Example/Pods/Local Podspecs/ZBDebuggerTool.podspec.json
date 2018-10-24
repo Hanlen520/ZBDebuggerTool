@@ -29,6 +29,7 @@
       "ZBDebuggerTool/Assets/*"
     ]
   },
+  "public_header_files": "Pod/Classes/**/*.h",
   "dependencies": {
     "AFNetworking": [
       "~> 3.2"
@@ -36,5 +37,19 @@
     "FMDB": [
       "~> 2.7.2"
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "Common",
+      "source_files": "ZBDebuggerTool/Classes/Common/**/*"
+    },
+    {
+      "name": "Helper",
+      "source_files": "ZBDebuggerTool/Classes/Helper/**/*"
+    },
+    {
+      "name": "Modules",
+      "source_files": "ZBDebuggerTool/Classes/Modules/**/*"
+    }
+  ]
 }

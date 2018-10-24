@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZBDebuggerTool'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = 'ZBDebuggerTool'
 
 # This description is used to generate tags and improve search results.
@@ -33,16 +33,33 @@ ZBDebuggerTool 是检测app性能的第三方工具，包括APP性能检测、cr
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'ZBDebuggerTool/Classes/**/*'
+  
+  #其他资源
   s.resource = 'ZBDebuggerTool/Classes/**/*'
   
+  # 图片资源
    s.resource_bundles = {
      'ZBDebuggerTool' => ['ZBDebuggerTool/Assets/*']
    }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   
-  # 第三方库
+   
+   #子库
+   s.subspec 'Common' do |c|
+       c.source_files = 'ZBDebuggerTool/Classes/Common/**/*'
+   end
+   
+   s.subspec 'Helper' do |h|
+      h.source_files = 'ZBDebuggerTool/Classes/Helper/**/*'
+   end
+   
+   s.subspec 'Modules' do |m|
+      m.source_files = 'ZBDebuggerTool/Classes/Modules/**/*'
+   end
+   
+   # 第三方库
    s.dependency 'AFNetworking', '~> 3.2'
    s.dependency 'FMDB', '~> 2.7.2'
   

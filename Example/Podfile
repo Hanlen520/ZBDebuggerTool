@@ -2,10 +2,4 @@ use_frameworks!
 
 target 'ZBDebuggerTool_Example' do
   pod 'ZBDebuggerTool', :path => '../'
-
-  target 'ZBDebuggerTool_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
